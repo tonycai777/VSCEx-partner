@@ -18,6 +18,10 @@
       {
         "command": "partner.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "partner.helloTony",
+        "title": "Hello Tony"
       }
     ]
   },
