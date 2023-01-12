@@ -2,6 +2,7 @@
   "name": "partner",
   "displayName": "partner",
   "description": "",
+  "publisher": "Tony",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.74.0"
@@ -10,7 +11,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:partner.helloWorld"
+    "onCommand:partner.helloWorld",
+    "onView:partner"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -23,7 +25,15 @@
         "command": "partner.helloTony",
         "title": "Hello Tony"
       }
-    ]
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "partner",
+          "name": "Partner"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
